@@ -96,7 +96,7 @@ if ( typeof Object.create !== 'function' ) {
 			fetch: function(imgsrc) {
 				//get the image
 				var self = this;
-				var newImg = new Image();
+				var newImg = document.createElement("img");
 				newImg.onload = function() {
 					//set the large image dimensions - used to calculte ratio's
 					self.largeWidth = newImg.width;
